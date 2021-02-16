@@ -1,0 +1,29 @@
+<html>
+
+    <head>
+        <script>
+            var nums = [0,1,0,1,1,1,0,1,0,0];
+            var n = nums.length;
+            function getMaxLength(nums, n){
+                var count = 0;
+                var result = 0;
+                
+                for (var i=0; i<n ; i++){
+                    if (nums[i]==0){
+                        count = 0;
+                    }
+                    else{
+                        count++;
+                        result = max(result,count);
+                    }
+                }
+                return result;
+            }
+           
+            document.getElementById('demo').innerHTML=result;
+        </script>
+    </head>
+    <body>
+        <div id="demo"></div>
+    </body>
+</html>

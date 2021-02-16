@@ -1,0 +1,31 @@
+<html>
+
+    <head>
+        <script>
+            
+            
+            function validate(){
+                var fname = document.getElementById('fname').value;
+                    if(fname==null || fname==""){
+                    alert("Name please");
+                    return false;
+                }
+                else if(!(document.getElementById('ch').checked)){
+                    alert("check please");
+                    return false;
+                }
+                else{
+                    alert("Submitted");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id="fname" name="firstname" placeholder="F Name" /><br/>
+            <input id="ch" type="checkbox" name="checkme"><br/>
+            <input type="submit" value="Submit" onclick="validate()" />
+        </form>
+
+    </body>
+</html>
